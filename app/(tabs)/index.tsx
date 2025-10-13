@@ -3,10 +3,8 @@ import { StyleSheet, Text, View } from 'react-native'
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text key="1" style={styles.text}>
-        Bem-vindo ao seu app!
-      </Text>
-      <Text key="2">Iniciando no expo!</Text>
+      <Text style={styles.textOne}>Bem-vindo ao seu app!</Text>
+      <Text style={styles.textTwo}>Iniciando no expo!</Text>
     </View>
   )
 }
@@ -14,13 +12,17 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#3c3c3c',
+    backgroundColor: '#131016',
     justifyContent: 'center',
     alignItems: 'center',
   },
-  text: {
+  textOne: {
     color: '#fff',
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: 'bold',
+  },
+  textTwo: {
+    color: '#6b6b6b',
+    fontSize: 16,
   },
 })
