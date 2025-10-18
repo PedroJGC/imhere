@@ -1,17 +1,25 @@
-import { Text, TextInput, View } from 'react-native'
+import { Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { styles } from './styles'
 
 export function Home() {
+  function handleParticipantAdd() {
+    console.log('Adicionar')
+  }
+
   return (
     <View style={styles.container}>
-      <Text style={styles.textOne}>Bem-vindo ao seu app!</Text>
-      <Text style={styles.textTwo}>Iniciando no expo!</Text>
+      <Text style={styles.textOne}>Nome do evento</Text>
+      <Text style={styles.textTwo}>Sábado, 18 de outubro de 2025</Text>
 
       <TextInput
         style={styles.input}
         placeholder="Digite algo"
         placeholderTextColor="#6b6b6b"
       />
+
+      <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
+        <Text style={styles.buttonText}>+</Text>
+      </TouchableOpacity>
     </View>
   )
 }
