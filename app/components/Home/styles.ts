@@ -4,16 +4,25 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#131016',
-    justifyContent: 'center',
-    alignItems: 'center',
+    padding: 24,
   },
   textOne: {
     color: '#fff',
     fontSize: 24,
     fontWeight: 'bold',
+    marginTop: 48,
   },
   textTwo: {
     color: '#6b6b6b',
     fontSize: 16,
+  },
+  input: {
+    height: 56,
+    backgroundColor: '#1f1e25',
+    borderRadius: 5,
+    color: '#fff',
+    padding: 16,
+    fontSize: 16,
+    marginTop: 12,
   },
 })
