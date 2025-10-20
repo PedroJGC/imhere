@@ -11,15 +11,17 @@ export function Home() {
       <Text style={styles.textOne}>Nome do evento</Text>
       <Text style={styles.textTwo}>Sábado, 18 de outubro de 2025</Text>
 
-      <TextInput
-        style={styles.input}
-        placeholder="Digite algo"
-        placeholderTextColor="#6b6b6b"
-      />
+      <View style={styles.form}>
+        <TextInput
+          style={styles.input}
+          placeholder="Digite algo"
+          placeholderTextColor="#6b6b6b"
+        />
 
-      <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
-        <Text style={styles.buttonText}>+</Text>
-      </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
+          <Text style={styles.buttonText}>+</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   )
 }
