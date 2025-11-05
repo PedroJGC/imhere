@@ -44,6 +44,7 @@ export function Home() {
       </View>
 
       <FlatList
+        style={styles.scroll}
         data={participants}
         keyExtractor={(item) => item}
         renderItem={({ item }) => (
